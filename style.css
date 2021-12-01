@@ -1,0 +1,75 @@
+li{
+   
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+width: 900px;
+margin: 0 auto;
+
+display: grid;
+place-items: center;
+text-align: center;
+
+}
+.price_container{
+    width: 100%;
+}
+.box_wapper{
+display: grid;
+gap: 50px;
+}
+.box{
+    width: 350px;
+    height: 500px;
+    background-color: antiquewhite;
+    border: 2px solid gray;
+    border-radius: 5px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    transition: .5s;
+    }.box:hover{
+        box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    }
+
+    .box .mounth_text{
+      background-color: rgb(164, 223, 97);
+      width: 100%;
+      text-align: center;
+    }
+
+    .box .all_list li{
+     margin: 40px;
+   
+    }
+    .yearly{
+        display: none;
+    }
+
+    .box_wapper{
+     display: flex;
+     gap: 50px;
+    }
+
+    .toggle__price{
+        display: flex;
+        margin: 0 auto;
+         background-color: antiquewhite;
+         border: 2px solid gray;
+         border-radius: 5px;
+         width: 500px;
+         margin-bottom: 4rem;
+        }
+        .mounth_price,.year_price{
+            width: 300px;
+            height: 60px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .price_container .toggle__price .active{
+        background-color:violet;
+        };

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Popular Price</h1>
+     
+
+        <div class="price_container">
+            <div class="toggle__price">
+                <div class="mounth_price mounth active"> <h4>Mounthly</h4></div>
+                <div class="year_price year"><h4>Yearly</h4></div>
+             </div>
+
+   <div class="box_wapper">
+    <div class="box">
+       <h1>Basic plan</h1>
+        <div class="year_text yearly"><h2>15$ Per anam</h2></div>  
+        <div class="mounth_text mounthly"><h2>5$ Per anam</h2></div>
+        <ul class="all_list">
+            <li class=" link">Hosting</li>
+            <li class=" link">Domain</li>
+            <li class=" link">Storage</li>
+            <li class=" link">Extra service</li>
+        </ul>
+
+</div>
+<div class="box">
+    <h1>Buiness plan</h1>
+   <div class="yearly_text yearly"><h2>15$ Per anam</h2></div>  
+   <div class="mounth_text mounthly"><h2>5$ Per anam</h2></div>
+   <ul class="all_list">
+       <li class=" link">Hosting</li>
+       <li class=" link">Domain</li>
+       <li class=" link">Storage</li>
+       <li class=" link">Extra service</li>
+   </ul>
+
+</div>
+<div class="box">
+    <h1>Advance plan</h1>
+<div class="yearly_text yearly"><h2>15$ Per anam</h2></div>  
+<div class="mounth_text mounthly"><h2>5$ Per anam</h2></div>
+<ul class="all_list">
+   <li class=" link">Hosting</li>
+   <li class=" link">Domain</li>
+   <li class=" link">Storage</li>
+   <li class=" link">Extra service</li>
+</ul>
+
+</div>
+   </div>
+
+        </div>
+    </div>
+
+<script>
+    let pirceTag = document.querySelector('.toggle__price .mounth');
+    let pirceTag2 = document.querySelector('.toggle__price .year');
+    let pirceboxMounth= document.querySelectorAll('.mounthly');
+    let pirceboxYear= document.querySelectorAll('.yearly');
+
+
+
+    pirceTag2.onclick = ()=>{
+        pirceTag.classList.remove('active')
+        pirceTag2.classList.add('active')
+      
+         
+        pirceboxMounth.forEach(yr =>{
+           yr.style.display ='none'
+       });
+       pirceboxYear.forEach(yr =>{
+           yr.style.display ='block'
+       });
+
+        if( pirceTag2){
+            pirceTag.onclick = ()=>{
+        pirceTag2.classList.remove('active')
+        pirceTag.classList.add('active')
+    
+    
+        pirceboxYear.forEach(yr =>{
+           yr.style.display ='none'
+       });
+           
+       pirceboxMounth.forEach(yr =>{
+           yr.style.display ='block'
+       });
+
+            }
+        }
+     
+    }
+
+    
+
+</script>
+</body>
+</html>
